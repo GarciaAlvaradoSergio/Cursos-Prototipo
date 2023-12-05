@@ -39,20 +39,40 @@
 
     <!-- Card Code -->
 
-    <div class="container py-2">
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-header">
-              Featured
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                      ¡Bienvenido de nuevo!
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Inicia sesión</h5>
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Recordar sesión</label>
+                        </div>
+                        <div class="d-grid gap-2 col-4 mx-auto">
+                            <button class="btn btn-success" type="button">Iniciar sesión</button>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="card-footer text-body-secondary text-center">
+                      ¿Olvidaste tu contraseña? <a class="link-opacity-100-hover" href="#">Click aqui.</a>
+                    </div>
+                  </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-footer text-body-secondary">
-              2 days ago
-            </div>
-          </div>
+        </div>
     </div>
 
     <!-- End Card Code -->
