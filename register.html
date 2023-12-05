@@ -29,7 +29,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a class="btn btn-dark" href="register.html">Crear cuenta</a>
+                    <button class="btn btn-dark" type="submit">Crear cuenta</button>
                 </div>
             </div>
         </div>
@@ -39,16 +39,20 @@
 
     <!-- Card Code -->
 
-    <div class="container py-5">
+    <div class="container py-2">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header text-center">
-                      ¡Bienvenido de nuevo!
+                      ¡Crea una cuenta nueva!
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title text-center">Inicia sesión</h5>
+                      <h5 class="card-title text-center">Registrate</h5>
                       <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control">
+                          </div>
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -58,6 +62,10 @@
                           <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                           <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirmar contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Recordar sesión</label>
@@ -66,9 +74,6 @@
                             <button class="btn btn-success" type="button">Iniciar sesión</button>
                           </div>
                       </form>
-                    </div>
-                    <div class="card-footer text-body-secondary text-center">
-                      ¿Olvidaste tu contraseña? <a class="link-opacity-100-hover" href="#">Click aqui.</a>
                     </div>
                   </div>
             </div>
