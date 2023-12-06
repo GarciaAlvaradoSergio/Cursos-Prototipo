@@ -149,13 +149,30 @@
       <div class="col-md-4">
         <div class="position-sticky" style="top: 2rem;">
           <div class="p-4 mb-3 bg-body-tertiary rounded">
-            <h4 class="fst-italic">Elianet Dayana Garcia Manriquez</h4>
-            <p class="mb-0">Cursos agregados: 8</p>
-            <p class="mb-0">Cursos completados: 2</p>
+            <div class="mb-3">
+                <label class="form-label">Cambiar nombre</label>
+                <input type="text" class="form-control" placeholder="Elianet Dayana Garcia Manriquez">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Cambiar correo</label>
+                <input type="text" class="form-control" placeholder="222110820@utvtol.mx">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contraseña actual</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Contraseña nueva</label>
+                <input type="password" class="form-control">
+              </div>
+            
+        <!--     <p class="mb-0">Cursos agregados: 8</p>
+            <p class="mb-0">Cursos completados: 2</p> -->
           </div>
 
           <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-primary" href="editProfile.html">Editar perfil</a>
+            <a class="btn btn-primary" href="profile.html">Guardar cambios</a>
             <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Eliminar perfil</button>
           </div>
 
@@ -163,25 +180,25 @@
       </div>
     </div>
   </main>
-  <!-- End Card Code -->
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Eliminar cuenta</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>¿Seguro que quieres eliminar la cuenta?</p>
+          ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar cuenta</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- End Card Code -->
 </body>
 
 </html>
