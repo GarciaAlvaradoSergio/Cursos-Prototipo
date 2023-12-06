@@ -29,7 +29,19 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <a class="btn btn-dark" href="login.html">Iniciar sesión</a>
+                    <div class="btn-group">
+                        <a type="button" class="btn btn-dark" href="profile.html">Alumno</a>
+                        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                         <!--    <li>
+                                <hr class="dropdown-divider">
+                            </li> -->
+                            <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,7 +60,45 @@
         </nav>
 
         <hr class="featurette-divider">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-secondary me-md-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Temario</button>
+        </div>
     </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Introducción a la Álgebra lineal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                1.-Definiciones
+                y Conceptos</li>
+            <div class="collapse" id="collapseExample">
+                <ul class="list-group py-2">
+                    <li class="list-group-item list-group-item-action list-group-item-success" aria-current="true">
+                        a. ¿Que es el Álgebra Lineal?</li>
+                    <li class="list-group-item list-group-item-action list-group-item-success">b. ¿Que es un Vector?</li>
+                    <li class="list-group-item list-group-item-action list-group-item-success">c. ¿Que es un Escalar?</li>
+                </ul>
+            </div>
+            <li class="list-group-item" type="button" data-bs-toggle="collapse" data-bs-target="#vecEsc"
+                aria-expanded="false" aria-controls="collapseExample">2.-Vectores y Escalares</li>
+
+            <div class="collapse" id="vecEsc">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action">Vector en el Plano y el Espacio</li>
+                    <li class="list-group-item list-group-item-action">Operaciones con Vectores</li>
+                    <li class="list-group-item list-group-item-action">Espacio Vectorial</li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</div>
 
 
     <!-- Card Code -->
